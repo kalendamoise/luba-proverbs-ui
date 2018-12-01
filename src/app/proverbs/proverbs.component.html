@@ -1,3 +1,21 @@
 <h2>{{proverb.originalText}}</h2>
 <div><span>{{'Translation:' | uppercase}} {{proverb.englishText}}</span></div>
 <div><span>{{'Meaning:' | uppercase}} {{proverb.englishMeaning}}</span></div>
+
+<div>
+<label>Proverb:
+  <input [(ngModel)]="proverb.originalText" placeholder="originalText">
+</label>
+</div>
+
+<div>
+<label>Translation:
+  <input [(ngModel)]="proverb.englishText" placeholder="englishText">
+</label>
+</div>
+
+<div>
+<label>Meaning:
+  <input [(ngModel)]="proverb.englishMeaning" placeholder="englishMeaning">
+</label>
+</div>
