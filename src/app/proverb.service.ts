@@ -15,4 +15,10 @@ export class ProverbService {
     this.messageService.add('HeroService: fetched heroes');
     return of(PROVERBS);
   }
+
+  getProverb(id: number): Observable<Proverb> {
+    // TODO: send the message _after_ fetching the hero
+    this.messageService.add(`HeroService: fetched hero id=${id}`);
+    return of(PROVERBS.find(proverb => proverb.id === id));
+  }
 }

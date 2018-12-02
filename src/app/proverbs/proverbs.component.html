@@ -1,10 +1,7 @@
-<h2>My Proverbs</h2>
-<div class="proverbs">
-  <li *ngFor="let proverb of proverbs" 
-    [class.selected]="proverb === seletedProverb"
-    (click)="onSelect(proverb)">
-    <span class="badge">{{proverb.id}}</span>{{proverb.originalText}}
+<ul class="heroes">
+  <li *ngFor="let proverb of proverbs">
+    <a routerLink="/detail/{{proverb.id}}">
+      <span class="badge">{{proverb.id}}</span> {{proverb.originalText}}
+    </a>
   </li>
-</div>
-
-<app-proverb-detail [proverb]="seletedProverb"></app-proverb-detail>
+</ul>

@@ -8,13 +8,15 @@ import { ProverbsComponent } from './proverbs/proverbs.component';
 import { FormsModule } from '@angular/forms';
 import { ProverbDetailComponent } from './proverb-detail/proverb-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProverbsComponent,
     ProverbDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

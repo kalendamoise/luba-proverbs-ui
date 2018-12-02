@@ -10,7 +10,6 @@ import { ProverbService } from '../proverb.service';
 export class ProverbsComponent implements OnInit {
 
   proverbs: Proverb[];
-  seletedProverb: Proverb;
 
   constructor(private proverbService: ProverbService) { }
 
@@ -21,9 +20,4 @@ export class ProverbsComponent implements OnInit {
   getProverbs(): void {
     this.proverbService.getProverbs().subscribe(proverbs => this.proverbs = proverbs);
   }
-
-  onSelect(proverb: Proverb): void {
-    this.seletedProverb = proverb;
-  }
-
 }
