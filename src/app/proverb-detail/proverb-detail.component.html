@@ -1,0 +1,19 @@
+<div *ngIf="proverb">
+<h2>{{proverb.originalText}}</h2>
+<div><span>id: </span>{{proverb.id}}</div>
+<div>
+<label>Proverb:
+  <input [(ngModel)]="proverb.originalText" placeholder="originalText">
+</label>
+</div>
+<div>
+<label>Translation:
+  <input [(ngModel)]="proverb.englishText" placeholder="englishText">
+</label>
+</div>
+<div>
+<label>Meaning:
+  <input [(ngModel)]="proverb.englishMeaning" placeholder="englishMeaning">
+</label>
+</div>
+</div>

@@ -7,22 +7,4 @@
   </li>
 </div>
 
-<div *ngIf="seletedProverb">
-<h2>{{seletedProverb.originalText}}</h2>
-<div><span>id: </span>{{seletedProverb.id}}</div>
-<div>
-<label>Proverb:
-  <input [(ngModel)]="seletedProverb.originalText" placeholder="originalText">
-</label>
-</div>
-<div>
-<label>Translation:
-  <input [(ngModel)]="seletedProverb.englishText" placeholder="englishText">
-</label>
-</div>
-<div>
-<label>Meaning:
-  <input [(ngModel)]="seletedProverb.englishMeaning" placeholder="englishMeaning">
-</label>
-</div>
-</div>
+<app-proverb-detail [proverb]="seletedProverb"></app-proverb-detail>
