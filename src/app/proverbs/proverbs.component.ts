@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Proverb } from '../proverb';
+import { PROVERBS } from '../mock-provers';
 
 @Component({
   selector: 'app-proverbs',
@@ -18,9 +19,16 @@ export class ProverbsComponent implements OnInit {
     frenchMeaning: ''
   };
 
+  proverbs = PROVERBS;
+  seletedProverb: Proverb;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(proverb: Proverb): void {
+    this.seletedProverb = proverb;
   }
 
 }

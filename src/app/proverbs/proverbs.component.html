@@ -1,21 +1,28 @@
-<h2>{{proverb.originalText}}</h2>
-<div><span>{{'Translation:' | uppercase}} {{proverb.englishText}}</span></div>
-<div><span>{{'Meaning:' | uppercase}} {{proverb.englishMeaning}}</span></div>
+<h2>My Proverbs</h2>
+<div class="proverbs">
+  <li *ngFor="let proverb of proverbs" 
+    [class.selected]="proverb === seletedProverb"
+    (click)="onSelect(proverb)">
+    <span class="badge">{{proverb.id}}</span>{{proverb.originalText}}
+  </li>
+</div>
 
+<div *ngIf="seletedProverb">
+<h2>{{seletedProverb.originalText}}</h2>
+<div><span>id: </span>{{seletedProverb.id}}</div>
 <div>
 <label>Proverb:
-  <input [(ngModel)]="proverb.originalText" placeholder="originalText">
+  <input [(ngModel)]="seletedProverb.originalText" placeholder="originalText">
 </label>
 </div>
-
 <div>
 <label>Translation:
-  <input [(ngModel)]="proverb.englishText" placeholder="englishText">
+  <input [(ngModel)]="seletedProverb.englishText" placeholder="englishText">
 </label>
 </div>
-
 <div>
 <label>Meaning:
-  <input [(ngModel)]="proverb.englishMeaning" placeholder="englishMeaning">
+  <input [(ngModel)]="seletedProverb.englishMeaning" placeholder="englishMeaning">
 </label>
+</div>
 </div>
