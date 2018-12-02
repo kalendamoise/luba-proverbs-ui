@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Proverb } from '../proverb';
-import { PROVERBS } from '../mock-provers';
+import { ProverbService } from '../proverb.service';
 
 @Component({
   selector: 'app-proverbs',
@@ -8,23 +8,18 @@ import { PROVERBS } from '../mock-provers';
   styleUrls: ['./proverbs.component.css']
 })
 export class ProverbsComponent implements OnInit {
-  proverb: Proverb = {
-    id: 1,
-    originalText: 'Kujinga mpala ke bukulu. I musongo wa nzala walwa nao.',
-    englishText: 'Wrinkling the forhead does not make one grown up.',
-    englishMeaning: 'It is wrestling with the pains of hunger. \
-    His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
-    Experience counts more than years.',
-    frenchText: '',
-    frenchMeaning: ''
-  };
 
-  proverbs = PROVERBS;
+  proverbs: Proverb[];
   seletedProverb: Proverb;
 
-  constructor() { }
+  constructor(private proverbService: ProverbService) { }
 
   ngOnInit() {
+    this.getProverbs();
+  }
+
+  getProverbs(): void {
+    this.proverbService.getProverbs().subscribe(proverbs => this.proverbs = proverbs);
   }
 
   onSelect(proverb: Proverb): void {
