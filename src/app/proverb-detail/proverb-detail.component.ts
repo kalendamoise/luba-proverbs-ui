@@ -29,6 +29,11 @@ export class ProverbDetailComponent implements OnInit {
       .subscribe(proverb => this.proverb = proverb);
   }
 
+  save(): void {
+    this.proverbService.updateProverb(this.proverb)
+      .subscribe(() => this.goBack());
+  }
+
   goBack(): void {
     this.location.back();
   }
