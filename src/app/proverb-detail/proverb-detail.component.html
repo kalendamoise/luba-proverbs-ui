@@ -1,22 +1,16 @@
 <div *ngIf="proverb">
-<h2>{{proverb.originalText}}</h2>
-<div><span>id: </span>{{proverb.id}}</div>
-<div>
-<label>Proverb:
-  <input [(ngModel)]="proverb.originalText" placeholder="originalText">
-</label>
-</div>
-<div>
-<label>Translation:
-  <input [(ngModel)]="proverb.englishText" placeholder="englishText">
-</label>
-</div>
-<div>
-<label>Meaning:
-  <input [(ngModel)]="proverb.englishMeaning" placeholder="englishMeaning">
-</label>
-</div>
-</div>
+<blockquote>
+  <label>Original Text:</label>
+  <p>{{proverb.originalText}}</p>
+  <label>Translation:</label>
+  <p>{{proverb.englishText}}</p>
+  <label>Meaning:</label>
+  <p>{{proverb.englishMeaning}}</p>
+  <span class="author"><i>{{proverb.category}} -- {{proverb.origin}}</i></span>
+</blockquote>
 
+<div>
 <button (click)="goBack()">go back</button>
-<button (click)="save()">save</button>
+</div>
+<!--button (click)="save()">save</button-->
+</div>
