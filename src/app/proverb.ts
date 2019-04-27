@@ -1,4 +1,4 @@
-export class Proverb {
+export interface Proverb {
     id: number;
     originalText: string;
     englishText: string;
