@@ -1,100 +1,19 @@
-/* HeroDetailComponent's private CSS styles */
-/*label {
-    display: inline-block;
-    width: 3em;
-    margin: .5em 0;
-    color: #607D8B;
-    font-weight: bold;
-  }
-  input {
-    height: 2em;
-    font-size: 1em;
-    padding-left: .4em;
-  }
-  button {
-    margin-top: 20px;
-    font-family: Arial;
-    background-color: #eee;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer; cursor: hand;
-  }
-  button:hover {
-    background-color: #cfd8dc;
-  }
-  button:disabled {
-    background-color: #eee;
-    color: #ccc;
-    cursor: auto;
-  }*/
-
-  @import url(https://fonts.googleapis.com/css?family=Bitter);
-* {
-  box-sizing: border-box;
+.example-card {
+    max-width: 400px;
 }
 
-.quote {
-    padding: 3px;
+.example-header-image {
+    background-image: url('/assets/mask.jpg');
+    background-size: cover;
 }
-html {
-  text-align: center;
-  padding-top: 50px;
-  background: url(https://dl.dropbox.com/s/mz2pjouq8xqw45k/wood_1.png?dl=1);
+
+.basic-container {
+    padding: 30px;
 }
-blockquote {
-    margin: 20px;
-  position: relative;
-  display: inline-block;
-  background: #eee;
-  padding: 40px 30px 30px 60px;
-  border-radius: 10px;
-  font-family: 'Bitter', serif;
-  color: #333;
-  text-align: left;
-  box-shadow: 1px 1px 1px #999,
-              2px 2px 1px #999,
-              3px 3px 1px #999;
-  transition-duration: .3s;
-  max-width: 400px;
-}
-blockquote span.author {
-  position: relative;
-  display: block;
-  text-align: right;
-  margin-top: 5px;
-  color: #999;
-}
-blockquote span.author i {
-  position: relative;
-  background: #eee;
-  padding-left: 5px;
-  font-style: italic;
-  z-index: 5;
-}
-blockquote span.author::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #ccc;
-  z-index: 1;
-}
-blockquote:hover {
-  box-shadow: 1px 1px 5px #999,
-                2px 2px 6px #999,
-                3px 3px 7px #999;
-}
-blockquote::before {
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  content: "\"";
-  font-family: 'Bitter', serif;
-  font-size: 120px;
-  color: #999;
+
+#containter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative
 }

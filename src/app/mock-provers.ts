@@ -87,5 +87,65 @@ export const PROVERBS: Proverb [] = [
     Experience counts more than years.',
     frenchText: '',
     frenchMeaning: ''
- }
+ },
+ {
+   id: 10,
+   originalText: 'Bukulu. I musongo wa nzala walwa nao.',
+   englishText: 'Wrinkling the forhead does not make one grown up.',
+   englishMeaning: 'It is wrestling with the pains of hunger. \
+   His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
+   Experience counts more than years.',
+   frenchText: '',
+   frenchMeaning: ''
+},
+{
+   id: 11,
+   originalText: 'Bukulu. I musongo wa nzala walwa nao.',
+   englishText: 'Wrinkling the forhead does not make one grown up.',
+   englishMeaning: 'It is wrestling with the pains of hunger. \
+   His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
+   Experience counts more than years.',
+   frenchText: '',
+   frenchMeaning: ''
+},
+{
+   id: 12,
+   originalText: 'Bukulu. I musongo wa nzala walwa nao.',
+   englishText: 'Wrinkling the forhead does not make one grown up.',
+   englishMeaning: 'It is wrestling with the pains of hunger. \
+   His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
+   Experience counts more than years.',
+   frenchText: '',
+   frenchMeaning: ''
+},
+{
+   id: 13,
+   originalText: 'Bukulu. I musongo wa nzala walwa nao.',
+   englishText: 'Wrinkling the forhead does not make one grown up.',
+   englishMeaning: 'It is wrestling with the pains of hunger. \
+   His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
+   Experience counts more than years.',
+   frenchText: '',
+   frenchMeaning: ''
+},
+{
+   id: 14,
+   originalText: 'Bukulu. I musongo wa nzala walwa nao.',
+   englishText: 'Wrinkling the forhead does not make one grown up.',
+   englishMeaning: 'It is wrestling with the pains of hunger. \
+   His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
+   Experience counts more than years.',
+   frenchText: '',
+   frenchMeaning: ''
+},
+{
+   id: 15,
+   originalText: 'Bukulu. I musongo wa nzala walwa nao.',
+   englishText: 'Wrinkling the forhead does not make one grown up.',
+   englishMeaning: 'It is wrestling with the pains of hunger. \
+   His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
+   Experience counts more than years.',
+   frenchText: '',
+   frenchMeaning: ''
+}
 ];

@@ -1,16 +1,23 @@
-<div *ngIf="proverb">
-<blockquote>
-  <label>Original Text:</label>
-  <p>{{proverb.originalText}}</p>
-  <label>Translation:</label>
-  <p>{{proverb.englishText}}</p>
-  <label>Meaning:</label>
-  <p>{{proverb.englishMeaning}}</p>
-  <span class="author"><i>{{proverb.category}} -- {{proverb.origin}}</i></span>
-</blockquote>
-
-<div>
-<button (click)="goBack()">go back</button>
+<div id="containter">
+<div class="mat-app-background basic-container">
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Original Text:</mat-card-title>
+    <mat-card-subtitle>Luba Proverb</mat-card-subtitle>
+  </mat-card-header>
+  <!--img mat-card-image src="/assets/mask.jpg" alt="Photo of a Shiba Inu" height="300" width="168" -->
+  <mat-card-content>
+    <p>{{proverb.originalText}}</p>
+    <label>Translation:</label>
+    <p>{{proverb.englishText}}</p>
+    <label>Meaning:</label>
+    <p>{{proverb.englishMeaning}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
 </div>
-<!--button (click)="save()">save</button-->
 </div>

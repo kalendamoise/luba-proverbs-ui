@@ -13,6 +13,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+import { MaterialModules } from './material/material.modules';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   imports: [
@@ -27,7 +30,8 @@ import { InMemoryDataService } from './in-memory-data.service';
     // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+    MaterialModules,
   ],
   declarations: [
     AppComponent,
@@ -35,6 +39,8 @@ import { InMemoryDataService } from './in-memory-data.service';
     ProverbDetailComponent,
     MessagesComponent,
     DashboardComponent,
+    HeaderComponent,
+    SidenavListComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
