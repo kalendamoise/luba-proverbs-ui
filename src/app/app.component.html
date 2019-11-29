@@ -1,27 +1,43 @@
 <header class="app-navbar mat-elevation-z6">
-    <div class="menu">
-      <a class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" routerLink="/">
-       <img src="/assets/mask.jpg" alt="LOGO" height="31" width="32">
-      </a>
-      <a class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" routerLink="/dashboard">Dashboard</a>
-      <a class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" routerLink="/proverbs">Proverbs</a>
-    </div>
-  </header>
-  <section class="material-docs-app">
-    <mat-sidenav-container>
-      <mat-sidenav  #sidenav role="navigation">
-        <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
-      </mat-sidenav>
-      <mat-sidenav-content>
-        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-        <main>
-          <router-outlet></router-outlet>
-          <app-messages></app-messages>
-        </main>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
+  <div class="menu">
+    <a
+      class="docs-navbar-hide-small docs-button mat-button ng-star-inserted"
+      routerLink="/"
+    >
+      <mat-icon aria-hidden="false" aria-label="Example home icon"
+        >home</mat-icon
+      >
+    </a>
+    <a
+      class="docs-navbar-hide-small docs-button mat-button ng-star-inserted"
+      routerLink="/dashboard"
+      >Popular</a
+    >
+    <a
+      class="docs-navbar-hide-small docs-button mat-button ng-star-inserted"
+      routerLink="/proverbs"
+      >All Proverbs</a
+    >
+  </div>
+</header>
+<section class="material-docs-app">
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation" position="start" mode="push">
+      <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+      <main>
+        <div id="containter">
+          <div class="mat-app-background basic-container">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <footer class="docs-footer">
+    <app-messages></app-messages>
+    <p class="copyright">&#169; Kalenda Kabukala</p>
+  </footer>
 </section>
-<footer class="docs-footer">
-  <p>Footer</p>
-</footer>
-

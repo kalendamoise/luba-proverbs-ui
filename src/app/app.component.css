@@ -37,13 +37,10 @@
     background: #3f51b5;
 }
 
-.docs-footer[_ngcontent-ofi-c10] {
+.docs-footer {
     padding: 12px;
     font-size: 12px;
-    margin-top: 40px;
-}
-
-.docs-footer {
+    margin-top: 20px;
     background: #3f51b5;
     color: #fff;
 }
@@ -54,5 +51,15 @@ footer {
 
 .menu {
     margin-right: auto;
-    ;
+}
+
+#containter {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative
+}
+
+.copyright {
+  text-align: center;
 }

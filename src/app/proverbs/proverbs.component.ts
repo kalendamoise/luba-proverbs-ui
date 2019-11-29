@@ -10,6 +10,7 @@ import { ProverbService } from '../proverb.service';
 export class ProverbsComponent implements OnInit {
 
   proverbs: Proverb[];
+  selectedCategory = 'All';
 
   constructor(private proverbService: ProverbService) { }
 

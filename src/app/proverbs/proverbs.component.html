@@ -1,7 +1,9 @@
-<ul class="heroes">
-  <li *ngFor="let proverb of proverbs">
-    <a routerLink="/detail/{{proverb.id}}">
-      <span class="badge">{{proverb.id}}</span> {{proverb.originalText}}
-    </a>
-  </li>
-</ul>
+<h1>Category: {{selectedCategory}}</h1>
+<div class="proverbs-list">
+<div class="proverbs" >
+    <app-proverb-detail [proverb]="proverb" *ngFor="let proverb of proverbs" ></app-proverb-detail>
+<!--    <a routerLink="/detail/{{proverb.id}}">-->
+<!--      <span class="badge">{{proverb.id}}</span> {{proverb.originalText}}-->
+<!--    </a>-->
+</div>
+</div>

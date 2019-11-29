@@ -5,4 +5,6 @@ export interface Proverb {
     englishMeaning: string;
     frenchText: string;
     frenchMeaning: string;
+    likes: number;
+    shared: number;
 }

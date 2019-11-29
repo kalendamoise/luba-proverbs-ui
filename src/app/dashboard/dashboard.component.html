@@ -1,9 +1,7 @@
-<h3>Top Proverbs</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let proverb of proverbs" class="col-1-4"
-     routerLink="/detail/{{proverb.id}}">
-    <div class="module hero">
-      <h4>{{proverb.originalText}}</h4>
-    </div>
-  </a>
+
+<div id="containter" >
+  <h1>Popular Proverbs</h1>
+  <div class="proverbs">
+     <app-proverb-detail [proverb]="item" *ngFor="let item of proverbs"></app-proverb-detail>
+  </div>
 </div>

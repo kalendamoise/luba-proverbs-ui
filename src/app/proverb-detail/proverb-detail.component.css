@@ -1,19 +1,67 @@
 .example-card {
-    max-width: 400px;
+  width: 25em;
+  height: auto; /*20em;*/
+  margin: 0.5em;
 }
 
 .example-header-image {
-    background-image: url('/assets/mask.jpg');
-    background-size: cover;
+  background-image: url("/assets/mask.jpg");
+  background-size: cover;
 }
 
 .basic-container {
-    padding: 30px;
+  padding: 30px;
 }
 
-#containter {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    position: relative
+p {
+  text-align: justify;
+  margin-top: 1px;
+}
+
+p.mat-card-subtitle {
+  margin-bottom: 5px;
+}
+
+.card-content {
+  margin: 0 16px;
+}
+
+.mat-card,
+.mat-card-header,
+.mat-card-actions {
+  background-color: ghostwhite;
+}
+
+.mat-card-content,
+.mat-card-subtitle {
+  padding-top: 5px;
+  background-color: aliceblue;
+}
+
+.mat-card {
+  padding-top: 16px;
+  padding-right: 1px;
+  padding-bottom: 16px;
+  padding-left: 1px;
+}
+
+.mat-card-actions {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 8px 0;
+  padding-bottom: 8px;
+}
+
+q {
+  quotes: "\201c""\201d";
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
+.example-card {
+  display: inline-block;
 }

@@ -9,7 +9,9 @@ export const PROVERBS: Proverb [] = [
     His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
     Experience counts more than years.',
     frenchText: '',
-    frenchMeaning: ''
+    frenchMeaning: '',
+   likes: 0,
+   shared: 0
  },
  {
     id: 2,
@@ -18,7 +20,9 @@ export const PROVERBS: Proverb [] = [
     englishMeaning: 'It is wrestling with the pains of hunger. \
     Experience counts more than years.',
     frenchText: '',
-    frenchMeaning: ''
+    frenchMeaning: '',
+   likes: 0,
+   shared: 0
  },
  {
     id: 3,
@@ -27,6 +31,9 @@ export const PROVERBS: Proverb [] = [
     englishMeaning: 'It is wrestling with the pains of hunger. \
     His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life',    frenchText: '',
     frenchMeaning: ''
+   ,
+   likes: 0,
+   shared: 0
  },
  {
     id: 4,
@@ -36,7 +43,9 @@ export const PROVERBS: Proverb [] = [
     His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
     Experience counts more than years.',
     frenchText: '',
-    frenchMeaning: ''
+    frenchMeaning: '',
+   likes: 0,
+   shared: 0
  },
  {
     id: 5,
@@ -46,7 +55,9 @@ export const PROVERBS: Proverb [] = [
     His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
     Experience counts more than years.',
     frenchText: '',
-    frenchMeaning: ''
+    frenchMeaning: '',
+   likes: 0,
+   shared: 0
  },
  {
     id: 6,
@@ -56,7 +67,9 @@ export const PROVERBS: Proverb [] = [
     His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
     Experience counts more than years.',
     frenchText: '',
-    frenchMeaning: ''
+    frenchMeaning: '',
+   likes: 0,
+   shared: 0
  },
  {
     id: 7,
@@ -66,7 +79,9 @@ export const PROVERBS: Proverb [] = [
     His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
     Experience counts more than years.',
     frenchText: '',
-    frenchMeaning: ''
+    frenchMeaning: '',
+   likes: 0,
+   shared: 0
  },
  {
     id: 8,
@@ -76,7 +91,9 @@ export const PROVERBS: Proverb [] = [
     His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
     Experience counts more than years.',
     frenchText: '',
-    frenchMeaning: ''
+    frenchMeaning: '',
+   likes: 0,
+   shared: 0
  },
  {
     id: 9,
@@ -86,7 +103,9 @@ export const PROVERBS: Proverb [] = [
     His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
     Experience counts more than years.',
     frenchText: '',
-    frenchMeaning: ''
+    frenchMeaning: '',
+    likes: 0,
+    shared: 0
  },
  {
    id: 10,
@@ -96,7 +115,9 @@ export const PROVERBS: Proverb [] = [
    His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
    Experience counts more than years.',
    frenchText: '',
-   frenchMeaning: ''
+   frenchMeaning: '',
+   likes: 0,
+   shared: 0
 },
 {
    id: 11,
@@ -106,7 +127,9 @@ export const PROVERBS: Proverb [] = [
    His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
    Experience counts more than years.',
    frenchText: '',
-   frenchMeaning: ''
+   frenchMeaning: '',
+   likes: 0,
+   shared: 0
 },
 {
    id: 12,
@@ -116,7 +139,9 @@ export const PROVERBS: Proverb [] = [
    His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
    Experience counts more than years.',
    frenchText: '',
-   frenchMeaning: ''
+   frenchMeaning: '',
+   likes: 0,
+   shared: 0
 },
 {
    id: 13,
@@ -126,7 +151,9 @@ export const PROVERBS: Proverb [] = [
    His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
    Experience counts more than years.',
    frenchText: '',
-   frenchMeaning: ''
+   frenchMeaning: '',
+   likes: 0,
+   shared: 0
 },
 {
    id: 14,
@@ -136,7 +163,9 @@ export const PROVERBS: Proverb [] = [
    His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
    Experience counts more than years.',
    frenchText: '',
-   frenchMeaning: ''
+   frenchMeaning: '',
+   likes: 0,
+   shared: 0
 },
 {
    id: 15,
@@ -146,6 +175,8 @@ export const PROVERBS: Proverb [] = [
    His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
    Experience counts more than years.',
    frenchText: '',
-   frenchMeaning: ''
+   frenchMeaning: '',
+   likes: 0,
+   shared: 0
 }
 ];

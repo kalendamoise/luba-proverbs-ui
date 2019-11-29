@@ -1,23 +1,28 @@
-<div id="containter">
-<div class="mat-app-background basic-container">
 <mat-card class="example-card">
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Original Text:</mat-card-title>
-    <mat-card-subtitle>Luba Proverb</mat-card-subtitle>
+    <!--    <div mat-card-avatar class="example-header-image"></div>-->
+    <mat-card-title>
+      <em>
+        <q>{{ proverb?.originalText }}</q>
+      </em>
+    </mat-card-title>
+    <!--    <mat-card-subtitle>Luba Proverb</mat-card-subtitle>-->
   </mat-card-header>
-  <!--img mat-card-image src="/assets/mask.jpg" alt="Photo of a Shiba Inu" height="300" width="168" -->
-  <mat-card-content>
-    <p>{{proverb.originalText}}</p>
-    <label>Translation:</label>
-    <p>{{proverb.englishText}}</p>
-    <label>Meaning:</label>
-    <p>{{proverb.englishMeaning}}</p>
+  <mat-card-content [style.overflow]="'auto'" [style.height.px]="'180'">
+    <div class="card-content">
+      <p class="mat-card-subtitle"><em>English</em></p>
+      <q>
+        {{ proverb?.englishText }}
+      </q>
+    </div>
+    <br />
+    <div class="card-content">
+      <p class="mat-card-subtitle">Meaning</p>
+      <p>{{ proverb?.englishMeaning }}</p>
+    </div>
   </mat-card-content>
-  <mat-card-actions>
+  <mat-card-actions align="end">
     <button mat-button>LIKE</button>
     <button mat-button>SHARE</button>
   </mat-card-actions>
 </mat-card>
-</div>
-</div>

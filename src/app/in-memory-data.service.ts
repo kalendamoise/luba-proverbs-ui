@@ -17,7 +17,9 @@ export class InMemoryDataService implements InMemoryDbService {
          His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
          Experience counts more than years.',
          frenchText: '',
-         frenchMeaning: ''
+         frenchMeaning: '',
+         likes: 0,
+         shared: 0
       },
       {
          id: 2,
@@ -26,7 +28,9 @@ export class InMemoryDataService implements InMemoryDbService {
          englishMeaning: 'It is wrestling with the pains of hunger. \
          Experience counts more than years.',
          frenchText: '',
-         frenchMeaning: ''
+         frenchMeaning: '',
+        likes: 0,
+        shared: 0
       },
       {
          id: 3,
@@ -34,7 +38,9 @@ export class InMemoryDataService implements InMemoryDbService {
          englishText: 'Wrinkling the forhead does not make one grown up.',
          englishMeaning: 'It is wrestling with the pains of hunger. \
          His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life',    frenchText: '',
-         frenchMeaning: ''
+         frenchMeaning: '',
+        likes: 0,
+        shared: 0
       },
       {
          id: 4,
@@ -44,7 +50,9 @@ export class InMemoryDataService implements InMemoryDbService {
          His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
          Experience counts more than years.',
          frenchText: '',
-         frenchMeaning: ''
+         frenchMeaning: '',
+        likes: 0,
+        shared: 0
       },
       {
          id: 5,
@@ -54,7 +62,9 @@ export class InMemoryDataService implements InMemoryDbService {
          His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
          Experience counts more than years.',
          frenchText: '',
-         frenchMeaning: ''
+         frenchMeaning: '',
+        likes: 0,
+        shared: 0
       },
       {
          id: 6,
@@ -64,7 +74,9 @@ export class InMemoryDataService implements InMemoryDbService {
          His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
          Experience counts more than years.',
          frenchText: '',
-         frenchMeaning: ''
+         frenchMeaning: '',
+        likes: 0,
+        shared: 0
       },
       {
          id: 7,
@@ -74,7 +86,9 @@ export class InMemoryDataService implements InMemoryDbService {
          His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
          Experience counts more than years.',
          frenchText: '',
-         frenchMeaning: ''
+         frenchMeaning: '',
+        likes: 0,
+        shared: 0
       },
       {
          id: 8,
@@ -84,7 +98,9 @@ export class InMemoryDataService implements InMemoryDbService {
          His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
          Experience counts more than years.',
          frenchText: '',
-         frenchMeaning: ''
+         frenchMeaning: '',
+        likes: 0,
+        shared: 0
       },
       {
          id: 9,
@@ -94,7 +110,9 @@ export class InMemoryDataService implements InMemoryDbService {
          His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
          Experience counts more than years.',
          frenchText: '',
-         frenchMeaning: ''
+         frenchMeaning: '',
+        likes: 0,
+        shared: 0
       },
       {
         id: 10,
@@ -104,7 +122,9 @@ export class InMemoryDataService implements InMemoryDbService {
         His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
         Experience counts more than years.',
         frenchText: '',
-        frenchMeaning: ''
+        frenchMeaning: '',
+        likes: 0,
+        shared: 0
      },
      {
         id: 11,
@@ -114,7 +134,9 @@ export class InMemoryDataService implements InMemoryDbService {
         His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
         Experience counts more than years.',
         frenchText: '',
-        frenchMeaning: ''
+        frenchMeaning: '',
+       likes: 0,
+       shared: 0
      },
      {
         id: 12,
@@ -124,7 +146,9 @@ export class InMemoryDataService implements InMemoryDbService {
         His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
         Experience counts more than years.',
         frenchText: '',
-        frenchMeaning: ''
+        frenchMeaning: '',
+       likes: 0,
+       shared: 0
      },
      {
         id: 13,
@@ -134,7 +158,9 @@ export class InMemoryDataService implements InMemoryDbService {
         His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
         Experience counts more than years.',
         frenchText: '',
-        frenchMeaning: ''
+        frenchMeaning: '',
+       likes: 0,
+       shared: 0
      },
      {
         id: 14,
@@ -144,7 +170,9 @@ export class InMemoryDataService implements InMemoryDbService {
         His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
         Experience counts more than years.',
         frenchText: '',
-        frenchMeaning: ''
+        frenchMeaning: '',
+       likes: 0,
+       shared: 0
      },
      {
         id: 15,
@@ -154,7 +182,9 @@ export class InMemoryDataService implements InMemoryDbService {
         His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
         Experience counts more than years.',
         frenchText: '',
-        frenchMeaning: ''
+        frenchMeaning: '',
+       likes: 0,
+       shared: 0
      }
      ];
    return {proverbs};

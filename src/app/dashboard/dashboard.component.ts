@@ -8,7 +8,7 @@ import { ProverbService } from '../proverb.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  proverbs: Proverb[];
+  proverbs: Proverb[] = [];
 
   constructor(private proverbService: ProverbService) { }
 

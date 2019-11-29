@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input, OnChanges, SimpleChanges} from '@angular/core';
 import { Proverb } from '../proverb';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
@@ -10,7 +10,7 @@ import { ProverbService } from '../proverb.service';
   templateUrl: './proverb-detail.component.html',
   styleUrls: ['./proverb-detail.component.css']
 })
-export class ProverbDetailComponent implements OnInit {
+export class ProverbDetailComponent implements OnInit, OnChanges {
   @Input() proverb: Proverb;
 
   constructor(
@@ -20,13 +20,15 @@ export class ProverbDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getHero();
+    this.getProverb();
   }
 
-  getHero(): void {
+  getProverb(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.proverbService.getProverb(id)
-      .subscribe(proverb => this.proverb = proverb);
+    if (id !== 0) {
+      this.proverbService.getProverb(id)
+        .subscribe(proverb => this.proverb = proverb);
+    }
   }
 
   save(): void {
@@ -36,6 +38,9 @@ export class ProverbDetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
   }
 
 }
