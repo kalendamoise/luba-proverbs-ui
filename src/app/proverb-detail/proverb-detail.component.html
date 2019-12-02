@@ -1,28 +1,31 @@
 <mat-card class="example-card">
   <mat-card-header>
     <!--    <div mat-card-avatar class="example-header-image"></div>-->
-    <mat-card-title>
+    <!-- <mat-card-title>
       <em>
         <q>{{ proverb?.originalText }}</q>
       </em>
-    </mat-card-title>
+    </mat-card-title> -->
     <!--    <mat-card-subtitle>Luba Proverb</mat-card-subtitle>-->
   </mat-card-header>
-  <mat-card-content [style.overflow]="'auto'" [style.height.px]="'180'">
+  <mat-card-content [style.overflow]="'auto'">
     <div class="card-content">
-      <p class="mat-card-subtitle"><em>English</em></p>
-      <q>
+      <p>
+        {{ proverb?.originalText }}
+      </p>
+      <mat-divider></mat-divider>
+      <p>
+        <em class="mat-card-subtitle">English</em>
         {{ proverb?.englishText }}
-      </q>
-    </div>
-    <br />
-    <div class="card-content">
-      <p class="mat-card-subtitle">Meaning</p>
-      <p>{{ proverb?.englishMeaning }}</p>
+      </p>
+      <mat-divider></mat-divider>
+      <p>
+        <em class="mat-card-subtitle">Meaning</em> {{ proverb?.englishMeaning }}
+      </p>
     </div>
   </mat-card-content>
   <mat-card-actions align="end">
-    <button mat-button>LIKE</button>
+    <button mat-button (click)=like()>LIKE</button>
     <button mat-button>SHARE</button>
   </mat-card-actions>
 </mat-card>

@@ -22,20 +22,27 @@ p.mat-card-subtitle {
   margin-bottom: 5px;
 }
 
+.mat-card-title {
+  color: #188e7a;
+}
+
 .card-content {
   margin: 0 16px;
 }
 
-.mat-card,
+/* .mat-card,
 .mat-card-header,
 .mat-card-actions {
   background-color: ghostwhite;
-}
+} */
 
 .mat-card-content,
 .mat-card-subtitle {
   padding-top: 5px;
-  background-color: aliceblue;
+  font-size: 16px;
+  display: block;
+  font-family: helvetica neue, helvetica, verdana, arial, sans-serif !important;
+  /* background-color: aliceblue; */
 }
 
 .mat-card {
@@ -64,4 +71,10 @@ q:after {
 
 .example-card {
   display: inline-block;
+}
+
+.mat-card .mat-divider-horizontal {
+  position: relative;
+  left: 0;
+  width: 100%;
 }
