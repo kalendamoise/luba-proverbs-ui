@@ -45,12 +45,13 @@ export class ProverbDetailComponent implements OnInit, OnChanges {
   }
 
   goBack(): void {
-    this.location.back();
+    // this.location.back();
   }
 
   ngOnChanges(changes: SimpleChanges): void {}
 
   onLike(): void {
     this.proverb.likes += 1;
+    this.save();
   }
 }

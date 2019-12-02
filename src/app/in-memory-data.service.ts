@@ -18,7 +18,7 @@ export class InMemoryDataService implements InMemoryDbService {
          Experience counts more than years.",
         frenchText: "",
         frenchMeaning: "",
-        likes: 0,
+        likes: 23,
         shared: 0,
         quategory: []
       },
@@ -113,7 +113,7 @@ export class InMemoryDataService implements InMemoryDbService {
          Experience counts more than years.",
         frenchText: "",
         frenchMeaning: "",
-        likes: 0,
+        likes: 34,
         shared: 0,
         quategory: []
       },
@@ -197,7 +197,7 @@ export class InMemoryDataService implements InMemoryDbService {
         Experience counts more than years.",
         frenchText: "",
         frenchMeaning: "",
-        likes: 0,
+        likes: 34,
         shared: 0,
         quategory: []
       },

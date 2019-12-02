@@ -163,7 +163,7 @@ export const PROVERBS: Proverb[] = [
    Experience counts more than years.",
     frenchText: "",
     frenchMeaning: "",
-    likes: 0,
+    likes: 23,
     shared: 0,
     quategory: []
   },
@@ -177,7 +177,7 @@ export const PROVERBS: Proverb[] = [
    Experience counts more than years.",
     frenchText: "",
     frenchMeaning: "",
-    likes: 0,
+    likes: 56,
     shared: 0,
     quategory: []
   },
@@ -205,7 +205,7 @@ export const PROVERBS: Proverb[] = [
    Experience counts more than years.",
     frenchText: "",
     frenchMeaning: "",
-    likes: 0,
+    likes: 32,
     shared: 0,
     quategory: []
   }
