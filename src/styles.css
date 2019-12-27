@@ -5,6 +5,11 @@
 body {
   font-weight: 300;
   text-align: left;
+  background: url(https://i.pinimg.com/736x/ad/7a/32/ad7a324ca17c21c1b68c1383b0756a77--country-of-origin-congo.jpg)
+    repeat;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 h1 {
   color: #188e7a;
@@ -58,4 +63,8 @@ button:disabled {
 /************************************************/
 .docs-app-background {
   background: #fafafa;
+}
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }

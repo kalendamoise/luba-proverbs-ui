@@ -6,7 +6,7 @@
   flex-direction: column;
   position: absolute;
   top: 56px;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   right: 0;
 }
@@ -63,4 +63,10 @@ footer {
 
 .copyright {
   text-align: center;
+}
+
+
+#container {
+  height: 100vh;
+  overflow: auto;
 }
