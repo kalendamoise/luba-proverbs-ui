@@ -16,6 +16,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { MaterialModules } from './material/material.modules';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   imports: [
@@ -41,6 +42,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     DashboardComponent,
     HeaderComponent,
     SidenavListComponent,
+    CategoriesComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

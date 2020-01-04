@@ -1,7 +1,10 @@
 
+  <div class="topic-heading">
+      <h2>Popular Proverbs</h2>
+  </div>
+
 <div id="containter" >
-  <h1>Popular Proverbs</h1>
   <div class="proverbs">
-     <app-proverb-detail [proverb]="item" *ngFor="let item of proverbs"></app-proverb-detail>
+     <app-proverb-detail [proverb]="item" [caterories]="categories_dict" *ngFor="let item of proverbs"></app-proverb-detail>
   </div>
 </div>

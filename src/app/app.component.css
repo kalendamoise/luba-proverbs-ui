@@ -34,16 +34,28 @@
 }
 
 .app-navbar {
-  color: #fff;
-  background: #3d7269;
+  /* color: #fff;
+  background: #3d7269; */
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  max-width: 1530px;
+  height: 60px;
+  font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0px 32px;
+  margin: 0px auto;
+  min-width: 320px;
+  line-height: 1;
 }
 
 .docs-footer {
   padding: 12px;
   font-size: 12px;
   margin-top: 2px;
-  background: #3d7269;
-  color: #fff;
+  /* background: #3d7269;
+  color: #fff; */
+  background-color: rgb(255, 255, 255);
 }
 
 footer {
@@ -52,6 +64,7 @@ footer {
 
 .menu {
   margin-right: auto;
+  display: flex;
 }
 
 #containter {
@@ -59,6 +72,7 @@ footer {
   margin-right: auto;
   display: block;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .copyright {
@@ -69,4 +83,32 @@ footer {
 #container {
   height: 100vh;
   overflow: auto;
+}
+
+/* .search {
+	color: rgb(68, 68, 68);
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 5px;
+	border: 1px solid rgb(221, 221, 221);
+	outline: currentcolor none medium;
+	padding: 3px 10px 4px 30px;
+	transition: width 0.15s ease-in-out 0s;
+	width: 136px;
+} */
+
+.css-SearchInput {
+	color: rgb(68, 68, 68);
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 5px;
+	border: 1px solid rgb(221, 221, 221);
+	outline: currentcolor none medium;
+	padding: 3px 10px 4px 30px;
+	transition: width 0.15s ease-in-out 0s;
+	width: 136px;
+}
+
+input {
+  overflow: visible;
 }

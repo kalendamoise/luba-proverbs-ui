@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Proverb } from './proverb';
 import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -12,23 +11,25 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class ProverbService {
-  private proverbsUrl = 'api/proverbs';  // URL to web api
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CategoriesService {
+  private categorisUrl = 'api/categories';
 
   constructor(private http: HttpClient,
     private messageService: MessageService) { }
 
-  getProverbs(): Observable<Proverb[]> {
-    this.messageService.add('ProverbService: fetched proverbs');
-
-    return this.http.get<Proverb[]>(this.proverbsUrl)
+  getCategories(): Observable<string[]> {
+    return this.http.get<string[]>(this.categorisUrl)
       .pipe(
-        tap(_ => this.log('fetched proverbs')),
-        catchError(this.handleError('getProverbs', []))
+        tap(_ => this.log('fetched categories')),
+        catchError(this.handleError('getCategories', []))
     );
   }
 
-  /**
+    /**
    * Handle Http operation that failed.
    * Let the app continue.
    * @param operation - name of the operation that failed
@@ -48,25 +49,8 @@ export class ProverbService {
     };
   }
 
-  /** GET proverb by id. Will 404 if id not found */
-  getProverb(id: number): Observable<Proverb> {
-    const url = `${this.proverbsUrl}/${id}`;
-    return this.http.get<Proverb>(url).pipe(
-      tap(_ => this.log(`fetched proverb id=${id}`)),
-      catchError(this.handleError<Proverb>(`getProverb id=${id}`))
-    );
-  }
-
-  /** PUT: update the proverb on the server */
-  updateProverb (proverb: Proverb): Observable<any> {
-    return this.http.put(this.proverbsUrl, proverb, httpOptions).pipe(
-      tap(_ => this.log(`updated hero id=${proverb.id}`)),
-      catchError(this.handleError<any>('updateHero'))
-    );
-  }
-
   /** Log a HeroService message with the MessageService */
   private log(message: string) {
-    this.messageService.add(`ProverbService: ${message}`);
+    this.messageService.add(`CategoriesService: ${message}`);
   }
 }

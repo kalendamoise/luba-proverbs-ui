@@ -1,0 +1,126 @@
+.categories {
+    list-style-type: none;
+    padding: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-evenly;
+    font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.example-card {
+  width: 15em;
+  height: auto; /*20em;*/
+  margin: 0.5em;
+}
+
+.example-header-image {
+  background-image: url("/assets/mask.jpg");
+  background-size: cover;
+}
+
+.basic-container {
+  padding: 30px;
+}
+
+
+
+p.mat-card-subtitle {
+  margin-bottom: 5px;
+}
+
+.mat-card-title {
+  color: #188e7a;
+}
+
+.card-content {
+  margin: 0 16px;
+}
+
+/* .mat-card,
+  .mat-card-header,
+  .mat-card-actions {
+    background-color: ghostwhite;
+  } */
+
+.mat-card-content,
+.mat-card-subtitle {
+  padding-top: 5px;
+  font-size: 16px;
+  display: block;
+  font-family: helvetica neue, helvetica, verdana, arial, sans-serif !important;
+  /* background-color: aliceblue; */
+}
+
+
+.mat-card {
+  padding-top: 16px;
+  padding-right: 1px;
+  padding-bottom: 16px;
+  padding-left: 1px;
+}
+
+.mat-card-actions {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 8px 0;
+  padding-bottom: 8px;
+}
+
+q {
+  quotes: "\201c""\201d";
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
+.example-card {
+  display: inline-block;
+}
+
+.mat-card .mat-divider-horizontal {
+  position: relative;
+  left: 0;
+  width: 100%;
+}
+
+.example-card a:hover {
+  color: #50bcb6;
+}
+.example-card a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.card-content p {
+    text-align: center;
+    margin-top: 1px;
+  }
+
+
+  .topic-heading h2 {
+    margin: 0;
+    padding: 1rem;
+    text-transform: none;
+    letter-spacing: .02em;
+    font-weight: 100;
+    font-size: 35px;
+    max-width: 1125px;
+    margin: auto;
+  }
+
+  .topic-heading {
+	color: #555;
+	padding: 3.5rem 2rem;
+}

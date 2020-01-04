@@ -1,16 +1,32 @@
 <div id="container">
 <header class="app-navbar mat-elevation-z6">
   <div class="menu">
+    <div>
     <a
       class="docs-navbar-hide-small docs-button mat-button ng-star-inserted"
       routerLink="/">
       <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></a>
+    </div>
+    <div>  
     <a
       class="docs-navbar-hide-small docs-button mat-button ng-star-inserted"
       routerLink="/dashboard">Popular</a >
+    </div>
+    <div>
     <a
       class="docs-navbar-hide-small docs-button mat-button ng-star-inserted"
-      routerLink="/proverbs">All Proverbs</a>
+      routerLink="/proverbs">Proverbs</a>
+    </div>
+    <div>
+    <a
+      class="docs-navbar-hide-small docs-button mat-button ng-star-inserted"
+      routerLink="/categories">Categories</a>  
+    </div>
+  </div>
+  <div class="search">
+      <form class="search-form">
+          <input class="css-SearchInput" matInput placeholder="eg Wisdom">
+      </form>
   </div>
 </header>
 <section class="material-docs-app">
@@ -19,7 +35,7 @@
       <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+      <!-- <app-header (sidenavToggle)="sidenav.toggle()"></app-header> -->
       <main>
         <div id="containter">
           <div class="mat-app-background basic-container">
@@ -29,8 +45,10 @@
       </main>
     </mat-sidenav-content>
   </mat-sidenav-container>
-  <footer class="docs-footer">
-      <p class="copyright">&#169; Kalenda Kabukala</p>
-    </footer>
+  
 </section>
+
 </div>
+<footer class="docs-footer">
+    <p class="copyright">&#169; Kalenda Kabukala</p>
+  </footer>

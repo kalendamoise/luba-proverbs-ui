@@ -10,17 +10,23 @@
   </mat-card-header>
   <mat-card-content [style.overflow]="'auto'">
     <div class="card-content">
-      <p>
+        <em class="mat-card-subtitle">Original Text</em>
+      <p class="title">
         {{ proverb?.originalText }}
       </p>
       <mat-divider></mat-divider>
-      <p>
+      <p >
         <em class="mat-card-subtitle">English</em>
         {{ proverb?.englishText }}
       </p>
       <mat-divider></mat-divider>
       <p>
         <em class="mat-card-subtitle">Meaning</em> {{ proverb?.englishMeaning }}
+      </p>
+      <mat-divider></mat-divider>
+      <p>
+        <em class="mat-card-subtitle">Categories</em>
+        <a *ngFor="let item of proverb.quategory" style="padding: 3px; text-decoration: none;" [routerLink]="['/proverbs/',item]" routerLinkActive="active" >{{caterories[item]}} |</a> 
       </p>
     </div>
   </mat-card-content>

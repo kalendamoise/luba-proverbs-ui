@@ -1,9 +1,8 @@
-<h1>Category: {{selectedCategory}}</h1>
-<div class="proverbs-list">
-<div class="proverbs" >
-    <app-proverb-detail [proverb]="proverb" *ngFor="let proverb of proverbs" ></app-proverb-detail>
-<!--    <a routerLink="/detail/{{proverb.id}}">-->
-<!--      <span class="badge">{{proverb.id}}</span> {{proverb.originalText}}-->
-<!--    </a>-->
+<div class="topic-heading">
+    <h2>Category {{selectedCategory}}</h2>
 </div>
+<div class="proverbs-list">
+    <div class="proverbs" >
+        <app-proverb-detail [proverb]="proverb" [caterories]="categories_dict" *ngFor="let proverb of proverbs" ></app-proverb-detail>
+    </div>
 </div>

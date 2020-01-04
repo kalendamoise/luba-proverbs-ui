@@ -1,12 +1,15 @@
 import { InMemoryDbService } from "angular-in-memory-web-api";
 import { Injectable } from "@angular/core";
 import { Proverb } from "./proverb";
+import { CATEGORIES } from  "./category_list";
 
 @Injectable({
   providedIn: "root"
 })
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
+    const categories: string[] = CATEGORIES;
+
     const proverbs: Proverb[] = [
       {
         id: 1,
@@ -20,7 +23,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 23,
         shared: 0,
-        quategory: []
+        quategory: [0, 1]
       },
       {
         id: 2,
@@ -33,7 +36,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [2, 3]
       },
       {
         id: 3,
@@ -46,7 +49,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [4, 5]
       },
       {
         id: 4,
@@ -60,7 +63,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [5, 6]
       },
       {
         id: 5,
@@ -74,7 +77,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [8, 9]
       },
       {
         id: 6,
@@ -88,7 +91,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [9, 10]
       },
       {
         id: 7,
@@ -102,7 +105,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [11, 13]
       },
       {
         id: 8,
@@ -115,7 +118,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 34,
         shared: 0,
-        quategory: []
+        quategory: [0, 1]
       },
       {
         id: 9,
@@ -129,7 +132,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [3, 2]
       },
       {
         id: 10,
@@ -143,7 +146,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [1, 0]
       },
       {
         id: 11,
@@ -157,7 +160,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [11, 23]
       },
       {
         id: 12,
@@ -171,7 +174,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [0, 10]
       },
       {
         id: 13,
@@ -185,7 +188,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [42, 2]
       },
       {
         id: 14,
@@ -199,7 +202,7 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 34,
         shared: 0,
-        quategory: []
+        quategory: [2, 6]
       },
       {
         id: 15,
@@ -213,10 +216,37 @@ export class InMemoryDataService implements InMemoryDbService {
         frenchMeaning: "",
         likes: 0,
         shared: 0,
-        quategory: []
+        quategory: [7, 9]
+      },
+      {
+        id: 16,
+        originalText: "I musongo wa nzala walwa nao.",
+        englishText: "Wrinkling the forhead does not make one grown up.",
+        englishMeaning:
+          "It is wrestling with the pains of hunger. \
+         Experience counts more than years.",
+        frenchText: "",
+        frenchMeaning: "",
+        likes: 0,
+        shared: 0,
+        quategory: [2, 3]
+      },
+      {
+        id: 17,
+        originalText: "Bukulu. I musongo wa nzala walwa nao.",
+        englishText: "Wrinkling the forhead does not make one grown up.",
+        englishMeaning:
+          "It is wrestling with the pains of hunger. \
+        His forhead is not wrinkled through age, but through hunger, anxiety and the hard knocks of life \
+        Experience counts more than years.",
+        frenchText: "",
+        frenchMeaning: "",
+        likes: 0,
+        shared: 0,
+        quategory: [0, 10]
       }
     ];
-    return { proverbs };
+    return { proverbs, categories };
   }
 
   genId(proverbs: Proverb[]): number {
