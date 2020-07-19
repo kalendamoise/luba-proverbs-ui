@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "luba-proverbs"
+  "defaultProject": "luba-proverbs",
+  "cli": {
+    "analytics": "b400f4f2-a180-4b69-808c-9dae2cec89be"
+  }
 }
