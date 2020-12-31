@@ -1,0 +1,15 @@
+{
+    "/proverbs/*": {
+    "target": "https://api.lubaproverbs.com/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/categories/*": {
+    "target": "https://api.lubaproverbs.com/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+
+}
