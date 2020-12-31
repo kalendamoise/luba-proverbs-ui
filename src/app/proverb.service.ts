@@ -4,16 +4,17 @@ import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
+import {environment} from '../environments/environment';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Headers': '*', 'Access-Control-Allow-Origin': '*' })
 };
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProverbService {
-  private proverbsUrl = 'api/proverbs';  // URL to web api
+  private proverbsUrl = environment.apiUrl + '/proverbs';  // URL to web api
 
   constructor(private http: HttpClient,
     private messageService: MessageService) { }
@@ -21,7 +22,7 @@ export class ProverbService {
   getProverbs(): Observable<Proverb[]> {
     this.messageService.add('ProverbService: fetched proverbs');
 
-    return this.http.get<Proverb[]>(this.proverbsUrl)
+    return this.http.get<Proverb[]>(this.proverbsUrl, httpOptions)
       .pipe(
         tap(_ => this.log('fetched proverbs')),
         catchError(this.handleError('getProverbs', []))
@@ -51,7 +52,7 @@ export class ProverbService {
   /** GET proverb by id. Will 404 if id not found */
   getProverb(id: number): Observable<Proverb> {
     const url = `${this.proverbsUrl}/${id}`;
-    return this.http.get<Proverb>(url).pipe(
+    return this.http.get<Proverb>(url, httpOptions).pipe(
       tap(_ => this.log(`fetched proverb id=${id}`)),
       catchError(this.handleError<Proverb>(`getProverb id=${id}`))
     );

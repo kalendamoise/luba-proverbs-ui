@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
   constructor(private proverbService: ProverbService,  private categoriesService: CategoriesService) {}
 
   ngOnInit() {
-    this.getCategories();
+    //this.getCategories();
     this.getProverbs();
   }
 

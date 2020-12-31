@@ -3,9 +3,10 @@ import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
+import {environment} from '../environments/environment';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Headers': '*', 'Access-Control-Allow-Origin': '*'})
 };
 
 @Injectable({
@@ -16,20 +17,20 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class CategoriesService {
-  private categorisUrl = 'api/categories';
+  private categorisUrl = environment.apiUrl + '/categories';
 
   constructor(private http: HttpClient,
     private messageService: MessageService) { }
 
   getCategories(): Observable<string[]> {
-    return this.http.get<string[]>(this.categorisUrl)
+    return this.http.get<string[]>(this.categorisUrl, httpOptions)
       .pipe(
         tap(_ => this.log('fetched categories')),
         catchError(this.handleError('getCategories', []))
     );
   }
 
-    /**
+  /**
    * Handle Http operation that failed.
    * Let the app continue.
    * @param operation - name of the operation that failed
