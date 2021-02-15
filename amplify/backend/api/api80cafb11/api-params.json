@@ -1,0 +1,54 @@
+{
+    "paths": [
+        {
+            "name": "/proverbs",
+            "lambdaFunction": "lubaproverbsui284bb566",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/proverbs"
+        },
+        {
+            "name": "/categories",
+            "lambdaFunction": "lubaproverbsui877d3331",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/categories"
+        }
+    ],
+    "resourceName": "api80cafb11",
+    "apiName": "api80cafb11",
+    "functionArns": [
+        {
+            "lambdaFunction": "lubaproverbsui284bb566"
+        },
+        {
+            "lambdaFunction": "lubaproverbsui877d3331"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-lubaproverbsui-dev-221519-authRole",
+        "unAuthRoleName": "amplify-lubaproverbsui-dev-221519-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "lubaproverbsui284bb566",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "lubaproverbsui877d3331",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

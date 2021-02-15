@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lubaproverbsui-dev-221519-authRole",
+      "UnauthRoleArn": "arn:aws:iam::036330717918:role/amplify-lubaproverbsui-dev-221519-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::036330717918:role/amplify-lubaproverbsui-dev-221519-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-lubaproverbsui-dev-221519-deployment",
+      "UnauthRoleName": "amplify-lubaproverbsui-dev-221519-unauthRole",
+      "StackName": "amplify-lubaproverbsui-dev-221519",
+      "StackId": "arn:aws:cloudformation:us-east-1:036330717918:stack/amplify-lubaproverbsui-dev-221519/0a562230-6f3c-11eb-87ec-0ec209969e4d",
+      "AmplifyAppId": "d2resf3n9rst7f"
+    }
+  }
+}
