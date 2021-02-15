@@ -11,5 +11,36 @@
       "StackId": "arn:aws:cloudformation:us-east-1:036330717918:stack/amplify-lubaproverbsui-dev-221519/0a562230-6f3c-11eb-87ec-0ec209969e4d",
       "AmplifyAppId": "d2resf3n9rst7f"
     }
+  },
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lubaproverbsui-staging-224221-authRole",
+      "UnauthRoleArn": "arn:aws:iam::036330717918:role/amplify-lubaproverbsui-staging-224221-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::036330717918:role/amplify-lubaproverbsui-staging-224221-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-lubaproverbsui-staging-224221-deployment",
+      "UnauthRoleName": "amplify-lubaproverbsui-staging-224221-unauthRole",
+      "StackName": "amplify-lubaproverbsui-staging-224221",
+      "StackId": "arn:aws:cloudformation:us-east-1:036330717918:stack/amplify-lubaproverbsui-staging-224221/d0a32e30-6f3f-11eb-a565-12709ad3d671",
+      "AmplifyAppId": "d3uns28nwqe2px"
+    },
+    "categories": {
+      "function": {
+        "lubaproverbsui284bb566": {
+          "deploymentBucketName": "amplify-lubaproverbsui-staging-224221-deployment",
+          "s3Key": "amplify-builds/lubaproverbsui284bb566-416e596d2b784f526876-build.zip"
+        },
+        "lubaproverbsui877d3331": {
+          "deploymentBucketName": "amplify-lubaproverbsui-staging-224221-deployment",
+          "s3Key": "amplify-builds/lubaproverbsui877d3331-7070636e414272333647-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3uns28nwqe2px",
+          "type": "manual"
+        }
+      }
+    }
   }
 }
